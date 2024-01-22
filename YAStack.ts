@@ -10,7 +10,7 @@ class YAStack extends Collection {
 	   super.push(element);
 	}
    
-    // get the last value added to the collection, the top element
+    // get the last value added to the stack, the top element
     remove() {
 	   super.pop();
 	};
