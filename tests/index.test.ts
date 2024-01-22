@@ -1,9 +1,4 @@
 const { YAStack } = require("../YAStack");
-
-   //  add(element: any);
-   //  remove();
-   //  peek();
-   //  isEmpty();
 describe("A stack.", () => {
    let stack: typeof YAStack;
    let numItems = 0;
