@@ -54,4 +54,4 @@ This last expression will leave us with an empty object.
 This project is pretty much finished unless any of the code can be improved. 
 
 ## Contact
-Feel free to contact me @micrjamesjr on twitter or on github @micrjames
+Feel free to contact me @micrjamesjr on twitter.
