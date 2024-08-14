@@ -1,6 +1,6 @@
-const { Collection } = require("../Collection/Collection");
+import { Collection } from "./Collection/Collection";
 
-class YAStack extends Collection {
+export class YAStack extends Collection {
     constructor() {
 	   super();
 	}
@@ -25,5 +25,3 @@ class YAStack extends Collection {
 	   return super.size === 0;
 	};
 }
-
-exports.YAStack = YAStack;

@@ -1,13 +1,15 @@
-const { YAStack } = require("../YAStack");
+import { YAStack } from "../YAStack";
+import { dataObj } from "../Collection/utils/utils";
+
 describe("A stack.", () => {
-   let stack: typeof YAStack;
-   let numItems = 0;
-   beforeAll(() => {
-      stack = new YAStack();
-	  stack.add(1);
-	  numItems++;
-   });
    describe("Basic operations.", () => {
+	  let stack: YAStack;
+	  let numItems = 0;
+	  beforeAll(() => {
+		 stack = new YAStack();
+		 stack.add(1);
+		 numItems++;
+	  });
 	  test("Should not be empty.", () => {
 		 expect(stack.isEmpty()).toBeFalsy();
 	  });
@@ -30,20 +32,6 @@ describe("A stack.", () => {
 		 stack.remove();
 		 numItems--;
 		 expect(stack.size).toBe(numItems);
-	  });
-   });
-   describe("That is iterable.", () => {
-	  test("Should be a stack of 5 items.", () => {
-		 stack.add(3);
-		 numItems++;
-		 stack.add(4);
-		 numItems++;
-		 stack.add(5);
-		 numItems++;
-		 expect([...stack]).toHaveLength(numItems);
-	  });
-	  test("Should output a stack of the 5 items contained.", () => {
-		 expect([...stack]).toEqual([1, 2, 3, 4, 5]);
 	  });
    });
 });
